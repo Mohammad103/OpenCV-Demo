@@ -4,6 +4,6 @@
 target 'OpenCV Demo' do
   use_frameworks!
 
-  pod 'OpenCV'
+  pod 'OpenCV', '4.1.0'
 
 end

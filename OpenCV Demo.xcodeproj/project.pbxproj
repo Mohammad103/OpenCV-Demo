@@ -13,6 +13,13 @@
 		954981912423DF9A009A2CC4 /* PaperDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9549818F2423DF9A009A2CC4 /* PaperDetection.storyboard */; };
 		954981932423DF9D009A2CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954981922423DF9D009A2CC4 /* Assets.xcassets */; };
 		954981962423DF9D009A2CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954981942423DF9D009A2CC4 /* LaunchScreen.storyboard */; };
+		954981A62423F1B3009A2CC4 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 954981A52423F1B3009A2CC4 /* OpenCVWrapper.mm */; };
+		954981C02423F73A009A2CC4 /* UIImageView+ContentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 954981B22423F739009A2CC4 /* UIImageView+ContentFrame.m */; };
+		954981C12423F73A009A2CC4 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 954981B32423F739009A2CC4 /* UIImage+Rotate.m */; };
+		954981C22423F73A009A2CC4 /* UIImageView+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 954981B42423F73A009A2CC4 /* UIImageView+OpenCV.mm */; };
+		954981C42423F73A009A2CC4 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 954981B92423F73A009A2CC4 /* UIImage+OpenCV.mm */; };
+		954981C52423F73A009A2CC4 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 954981BC2423F73A009A2CC4 /* UIImage+fixOrientation.m */; };
+		954981C62423F73A009A2CC4 /* UIImage+OpenCVBW.mm in Sources */ = {isa = PBXBuildFile; fileRef = 954981BF2423F73A009A2CC4 /* UIImage+OpenCVBW.mm */; };
 		F22CDC67CF8FA2EED0E9A2AE /* Pods_OpenCV_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E5793A1E3A8388BBC4AAD /* Pods_OpenCV_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +33,22 @@
 		954981922423DF9D009A2CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		954981952423DF9D009A2CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		954981972423DF9D009A2CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954981A32423EDA2009A2CC4 /* OpenCV Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCV Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		954981A42423F1B3009A2CC4 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		954981A52423F1B3009A2CC4 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		954981A72423F214009A2CC4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		954981B22423F739009A2CC4 /* UIImageView+ContentFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ContentFrame.m"; sourceTree = "<group>"; };
+		954981B32423F739009A2CC4 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		954981B42423F73A009A2CC4 /* UIImageView+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImageView+OpenCV.mm"; sourceTree = "<group>"; };
+		954981B72423F73A009A2CC4 /* UIImage+OpenCVBW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCVBW.h"; sourceTree = "<group>"; };
+		954981B82423F73A009A2CC4 /* UIImageView+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+OpenCV.h"; sourceTree = "<group>"; };
+		954981B92423F73A009A2CC4 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		954981BA2423F73A009A2CC4 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		954981BB2423F73A009A2CC4 /* UIImageView+ContentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ContentFrame.h"; sourceTree = "<group>"; };
+		954981BC2423F73A009A2CC4 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		954981BD2423F73A009A2CC4 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		954981BE2423F73A009A2CC4 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		954981BF2423F73A009A2CC4 /* UIImage+OpenCVBW.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCVBW.mm"; sourceTree = "<group>"; };
 		CD4631BBEF238A7046410F65 /* Pods-OpenCV Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV Demo.release.xcconfig"; path = "Target Support Files/Pods-OpenCV Demo/Pods-OpenCV Demo.release.xcconfig"; sourceTree = "<group>"; };
 		CE5E5793A1E3A8388BBC4AAD /* Pods_OpenCV_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCV_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -48,7 +71,6 @@
 				058313D22E117058D5764818 /* Pods-OpenCV Demo.debug.xcconfig */,
 				CD4631BBEF238A7046410F65 /* Pods-OpenCV Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +106,8 @@
 				954981892423DF9A009A2CC4 /* AppDelegate.swift */,
 				9549818B2423DF9A009A2CC4 /* SceneDelegate.swift */,
 				9549819D2423DFE1009A2CC4 /* Modules */,
+				954981A02423E907009A2CC4 /* Extensions */,
+				954981A82423F38F009A2CC4 /* OpenCV Wrapper */,
 				9549819E2423DFF3009A2CC4 /* Assets */,
 			);
 			path = "OpenCV Demo";
@@ -103,6 +127,8 @@
 				954981922423DF9D009A2CC4 /* Assets.xcassets */,
 				954981942423DF9D009A2CC4 /* LaunchScreen.storyboard */,
 				954981972423DF9D009A2CC4 /* Info.plist */,
+				954981A32423EDA2009A2CC4 /* OpenCV Demo-Bridging-Header.h */,
+				954981A72423F214009A2CC4 /* PrefixHeader.pch */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -114,6 +140,34 @@
 				9549818F2423DF9A009A2CC4 /* PaperDetection.storyboard */,
 			);
 			path = PaperDetection;
+			sourceTree = "<group>";
+		};
+		954981A02423E907009A2CC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				954981BD2423F73A009A2CC4 /* UIImage+fixOrientation.h */,
+				954981BC2423F73A009A2CC4 /* UIImage+fixOrientation.m */,
+				954981BE2423F73A009A2CC4 /* UIImage+Rotate.h */,
+				954981B32423F739009A2CC4 /* UIImage+Rotate.m */,
+				954981BB2423F73A009A2CC4 /* UIImageView+ContentFrame.h */,
+				954981B22423F739009A2CC4 /* UIImageView+ContentFrame.m */,
+				954981B72423F73A009A2CC4 /* UIImage+OpenCVBW.h */,
+				954981BF2423F73A009A2CC4 /* UIImage+OpenCVBW.mm */,
+				954981BA2423F73A009A2CC4 /* UIImage+OpenCV.h */,
+				954981B92423F73A009A2CC4 /* UIImage+OpenCV.mm */,
+				954981B82423F73A009A2CC4 /* UIImageView+OpenCV.h */,
+				954981B42423F73A009A2CC4 /* UIImageView+OpenCV.mm */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		954981A82423F38F009A2CC4 /* OpenCV Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				954981A42423F1B3009A2CC4 /* OpenCVWrapper.h */,
+				954981A52423F1B3009A2CC4 /* OpenCVWrapper.mm */,
+			);
+			path = "OpenCV Wrapper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				954981C52423F73A009A2CC4 /* UIImage+fixOrientation.m in Sources */,
 				9549818E2423DF9A009A2CC4 /* PaperDetectionViewController.swift in Sources */,
+				954981C62423F73A009A2CC4 /* UIImage+OpenCVBW.mm in Sources */,
+				954981C42423F73A009A2CC4 /* UIImage+OpenCV.mm in Sources */,
+				954981A62423F1B3009A2CC4 /* OpenCVWrapper.mm in Sources */,
+				954981C12423F73A009A2CC4 /* UIImage+Rotate.m in Sources */,
 				9549818A2423DF9A009A2CC4 /* AppDelegate.swift in Sources */,
+				954981C02423F73A009A2CC4 /* UIImageView+ContentFrame.m in Sources */,
+				954981C22423F73A009A2CC4 /* UIImageView+OpenCV.mm in Sources */,
 				9549818C2423DF9A009A2CC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +421,10 @@
 			baseConfigurationReference = 058313D22E117058D5764818 /* Pods-OpenCV Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenCV Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "OpenCV Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,6 +432,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.msm.voicenotedemo.OpenCV-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV Demo/OpenCV Demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -378,7 +443,10 @@
 			baseConfigurationReference = CD4631BBEF238A7046410F65 /* Pods-OpenCV Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenCV Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "OpenCV Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,6 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.msm.voicenotedemo.OpenCV-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV Demo/OpenCV Demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

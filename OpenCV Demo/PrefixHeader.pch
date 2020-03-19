@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  OpenCV Demo
+//
+//  Created by Shaker on 3/19/20.
+//  Copyright © 2020 Shaker. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __cplusplus
+#include <opencv2/opencv.hpp>
+#endif
+
+#endif /* PrefixHeader_pch */
