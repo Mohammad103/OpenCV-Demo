@@ -15,6 +15,7 @@
 //  http://docs.opencv.org/doc/tutorials/ios/image_manipulation/image_manipulation.html#opencviosimagemanipulation
 
 #import "UIImage+OpenCV.h"
+#import "UIImage+Rotate.h"
 
 @implementation UIImage (OpenCV)
 
