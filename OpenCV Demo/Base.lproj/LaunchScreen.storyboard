@@ -15,17 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper Detection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2G-5u-cSR">
-                                <rect key="frame" x="145" y="442.5" width="124" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="opencv-logo" translatesAutoresizingMaskIntoConstraints="NO" id="fsb-2B-tUm">
+                                <rect key="frame" x="87" y="389" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="gFN-2S-fL2"/>
+                                    <constraint firstAttribute="height" constant="128" id="sJM-aQ-AVA"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="e2G-5u-cSR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZDh-uR-be8"/>
-                            <constraint firstItem="e2G-5u-cSR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pN2-Nw-rnU"/>
+                            <constraint firstItem="fsb-2B-tUm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2d6-OL-qM1"/>
+                            <constraint firstItem="fsb-2B-tUm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eZZ-Fg-OBA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,4 +36,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="opencv-logo" width="510" height="510"/>
+    </resources>
 </document>
