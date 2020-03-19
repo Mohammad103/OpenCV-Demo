@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		9549818A2423DF9A009A2CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954981892423DF9A009A2CC4 /* AppDelegate.swift */; };
 		9549818C2423DF9A009A2CC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9549818B2423DF9A009A2CC4 /* SceneDelegate.swift */; };
-		9549818E2423DF9A009A2CC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9549818D2423DF9A009A2CC4 /* ViewController.swift */; };
-		954981912423DF9A009A2CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9549818F2423DF9A009A2CC4 /* Main.storyboard */; };
+		9549818E2423DF9A009A2CC4 /* PaperDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9549818D2423DF9A009A2CC4 /* PaperDetectionViewController.swift */; };
+		954981912423DF9A009A2CC4 /* PaperDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9549818F2423DF9A009A2CC4 /* PaperDetection.storyboard */; };
 		954981932423DF9D009A2CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954981922423DF9D009A2CC4 /* Assets.xcassets */; };
 		954981962423DF9D009A2CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954981942423DF9D009A2CC4 /* LaunchScreen.storyboard */; };
+		F22CDC67CF8FA2EED0E9A2AE /* Pods_OpenCV_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E5793A1E3A8388BBC4AAD /* Pods_OpenCV_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		058313D22E117058D5764818 /* Pods-OpenCV Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV Demo.debug.xcconfig"; path = "Target Support Files/Pods-OpenCV Demo/Pods-OpenCV Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		954981862423DF9A009A2CC4 /* OpenCV Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		954981892423DF9A009A2CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9549818B2423DF9A009A2CC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9549818D2423DF9A009A2CC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		954981902423DF9A009A2CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9549818D2423DF9A009A2CC4 /* PaperDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperDetectionViewController.swift; sourceTree = "<group>"; };
+		954981902423DF9A009A2CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PaperDetection.storyboard; sourceTree = "<group>"; };
 		954981922423DF9D009A2CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		954981952423DF9D009A2CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		954981972423DF9D009A2CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4631BBEF238A7046410F65 /* Pods-OpenCV Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV Demo.release.xcconfig"; path = "Target Support Files/Pods-OpenCV Demo/Pods-OpenCV Demo.release.xcconfig"; sourceTree = "<group>"; };
+		CE5E5793A1E3A8388BBC4AAD /* Pods_OpenCV_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCV_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22CDC67CF8FA2EED0E9A2AE /* Pods_OpenCV_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2059402E8A982B339CB8FC5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				058313D22E117058D5764818 /* Pods-OpenCV Demo.debug.xcconfig */,
+				CD4631BBEF238A7046410F65 /* Pods-OpenCV Demo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79B9CB970E62192A54003A7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E5793A1E3A8388BBC4AAD /* Pods_OpenCV_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9549817D2423DF9A009A2CC4 = {
 			isa = PBXGroup;
 			children = (
 				954981882423DF9A009A2CC4 /* OpenCV Demo */,
 				954981872423DF9A009A2CC4 /* Products */,
+				2059402E8A982B339CB8FC5E /* Pods */,
+				79B9CB970E62192A54003A7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +83,37 @@
 			children = (
 				954981892423DF9A009A2CC4 /* AppDelegate.swift */,
 				9549818B2423DF9A009A2CC4 /* SceneDelegate.swift */,
-				9549818D2423DF9A009A2CC4 /* ViewController.swift */,
-				9549818F2423DF9A009A2CC4 /* Main.storyboard */,
+				9549819D2423DFE1009A2CC4 /* Modules */,
+				9549819E2423DFF3009A2CC4 /* Assets */,
+			);
+			path = "OpenCV Demo";
+			sourceTree = "<group>";
+		};
+		9549819D2423DFE1009A2CC4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9549819F2423E009009A2CC4 /* PaperDetection */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9549819E2423DFF3009A2CC4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				954981922423DF9D009A2CC4 /* Assets.xcassets */,
 				954981942423DF9D009A2CC4 /* LaunchScreen.storyboard */,
 				954981972423DF9D009A2CC4 /* Info.plist */,
 			);
-			path = "OpenCV Demo";
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		9549819F2423E009009A2CC4 /* PaperDetection */ = {
+			isa = PBXGroup;
+			children = (
+				9549818D2423DF9A009A2CC4 /* PaperDetectionViewController.swift */,
+				9549818F2423DF9A009A2CC4 /* PaperDetection.storyboard */,
+			);
+			path = PaperDetection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9549819A2423DF9D009A2CC4 /* Build configuration list for PBXNativeTarget "OpenCV Demo" */;
 			buildPhases = (
+				D6D37EFBDFAC7BB7E85AAAB3 /* [CP] Check Pods Manifest.lock */,
 				954981822423DF9A009A2CC4 /* Sources */,
 				954981832423DF9A009A2CC4 /* Frameworks */,
 				954981842423DF9A009A2CC4 /* Resources */,
@@ -127,18 +177,43 @@
 			files = (
 				954981962423DF9D009A2CC4 /* LaunchScreen.storyboard in Resources */,
 				954981932423DF9D009A2CC4 /* Assets.xcassets in Resources */,
-				954981912423DF9A009A2CC4 /* Main.storyboard in Resources */,
+				954981912423DF9A009A2CC4 /* PaperDetection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D6D37EFBDFAC7BB7E85AAAB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCV Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		954981822423DF9A009A2CC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9549818E2423DF9A009A2CC4 /* ViewController.swift in Sources */,
+				9549818E2423DF9A009A2CC4 /* PaperDetectionViewController.swift in Sources */,
 				9549818A2423DF9A009A2CC4 /* AppDelegate.swift in Sources */,
 				9549818C2423DF9A009A2CC4 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,12 +222,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9549818F2423DF9A009A2CC4 /* Main.storyboard */ = {
+		9549818F2423DF9A009A2CC4 /* PaperDetection.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				954981902423DF9A009A2CC4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = PaperDetection.storyboard;
 			sourceTree = "<group>";
 		};
 		954981942423DF9D009A2CC4 /* LaunchScreen.storyboard */ = {
@@ -282,6 +357,7 @@
 		};
 		9549819B2423DF9D009A2CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058313D22E117058D5764818 /* Pods-OpenCV Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,12 +369,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.msm.voicenotedemo.OpenCV-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9549819C2423DF9D009A2CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4631BBEF238A7046410F65 /* Pods-OpenCV Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.msm.voicenotedemo.OpenCV-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
